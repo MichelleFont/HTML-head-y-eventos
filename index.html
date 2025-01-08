@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica bloque 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function funcion_nom() {
+  var nom = document.getElementById("name").value;
+  alert ('bienvenido ' + nom)
+}
+
+function funcion_edad() {
+  var age = document.getElementById("age").value;
+  alert ('con ' + age + ' ya tendrás el carnet de conducir. ¿no?')
+}
+
+        </script>
+        </head>
+        <div class="Titulo" alt="Titulo">
+            <h1>Practica bloque 3</h1>
+         </div>
+        Introduce tu nombre:  <input type="text" id="name" onblur="funcion_nom()">
+        Introduce tu apellido: <input type="text" id="age" onchange="funcion_edad()">
+        
+<script>
+    function myFunction() {
+      alert("Se ha ejecutado evento onload");
+    }
+    </script>
+    </head>
+    <body onload="myFunction()">
+   
+</body>
+</html>
